@@ -25,7 +25,7 @@ namespace jp.co.brycen.MimamoriDemo.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\P0828\\\\recv.csv")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\P0828\\recv.csv")]
         public string CsvFilePath {
             get {
                 return ((string)(this["CsvFilePath"]));
@@ -55,7 +55,7 @@ namespace jp.co.brycen.MimamoriDemo.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\P0828\\\\device_state.csv")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\P0828\\device_state.csv")]
         public string CsvFilePath2 {
             get {
                 return ((string)(this["CsvFilePath2"]));
@@ -103,7 +103,7 @@ namespace jp.co.brycen.MimamoriDemo.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string MaxHumid {
             get {
                 return ((string)(this["MaxHumid"]));
@@ -127,7 +127,7 @@ namespace jp.co.brycen.MimamoriDemo.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Users\\\\P0828\\\\supply_state.csv")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\P0828\\supply_state.csv")]
         public string CsvFilePath3 {
             get {
                 return ((string)(this["CsvFilePath3"]));

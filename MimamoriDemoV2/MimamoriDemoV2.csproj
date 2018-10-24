@@ -47,41 +47,63 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
-  <ItemGroup>
+ <ItemGroup>
     <Compile Include="ClsDeviceState.cs" />
     <Compile Include="ClsWarehouseSupplyState.cs" />
     <Compile Include="GraphControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GraphControl.Designer.cs" />
+    <Compile Include="GraphControl.Designer.cs">
+      <DependentUpon>GraphControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="LCDForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LCDForm.Designer.cs" />
+    <Compile Include="LCDForm.Designer.cs">
+      <DependentUpon>LCDForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PcdFrom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PcdFrom.Designer.cs" />
+    <Compile Include="PcdFrom.Designer.cs">
+      <DependentUpon>PcdFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="PctForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PctForm.Designer.cs" />
+    <Compile Include="PctForm.Designer.cs">
+      <DependentUpon>PctForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="UcDynamicFlow.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UcDynamicFlow.Designer.cs" />
-    <EmbeddedResource Include="GraphControl.resx" />
-    <EmbeddedResource Include="LCDForm.resx" />
-    <EmbeddedResource Include="MainForm.resx" />
-    <EmbeddedResource Include="PcdFrom.resx" />
-    <EmbeddedResource Include="PctForm.resx" />
+    <Compile Include="UcDynamicFlow.Designer.cs">
+      <DependentUpon>UcDynamicFlow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GraphControl.resx">
+      <DependentUpon>GraphControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LCDForm.resx">
+      <DependentUpon>LCDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcdFrom.resx">
+      <DependentUpon>PcdFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PctForm.resx">
+      <DependentUpon>PctForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -92,7 +114,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UcDynamicFlow.resx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
