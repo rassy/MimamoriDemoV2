@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MimamoriDemoV2
+namespace jp.co.brycen.MimamoriDemo
 {
-	public partial class Form1 : Form
-	{
-		public Form1()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class PctForm : Form
+    {
+        public PctForm()
+        {
+            InitializeComponent();
+        }
+    }
 }

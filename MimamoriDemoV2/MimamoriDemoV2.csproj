@@ -7,11 +7,12 @@
     <ProjectGuid>{A7A3F21D-A3AA-480E-8CB0-0A5982277F48}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MimamoriDemoV2</RootNamespace>
+    <RootNamespace>jp.co.brycen.MimamoriDemo</RootNamespace>
     <AssemblyName>MimamoriDemoV2</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +48,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ClsDeviceState.cs" />
+    <Compile Include="ClsWarehouseSupplyState.cs" />
+    <Compile Include="GraphControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphControl.Designer.cs" />
+    <Compile Include="LCDForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="LCDForm.Designer.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MainForm.Designer.cs" />
+    <Compile Include="PcdFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PcdFrom.Designer.cs" />
+    <Compile Include="PctForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PctForm.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="UcDynamicFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcDynamicFlow.Designer.cs" />
+    <EmbeddedResource Include="GraphControl.resx" />
+    <EmbeddedResource Include="LCDForm.resx" />
+    <EmbeddedResource Include="MainForm.resx" />
+    <EmbeddedResource Include="PcdFrom.resx" />
+    <EmbeddedResource Include="PctForm.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +90,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UcDynamicFlow.resx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +105,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L00_注意.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L00_注意_顔のみ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L01_警戒.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L01_警戒_顔のみ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L02_厳重警戒.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L02_厳重警戒_顔のみ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L03_危険.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L03_危険_顔のみ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LCDForm1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PCDFrom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PCTFrom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S00_NimotsuPalletBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S01_CarForkLift.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S03_CarTruck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S04_JUUKI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S05_TOOL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ブランドマーク.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\凡例.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

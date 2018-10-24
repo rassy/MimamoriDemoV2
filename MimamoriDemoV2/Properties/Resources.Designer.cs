@@ -4,68 +4,250 @@
 //     ランタイム バージョン:4.0.30319.42000
 //
 //     このファイルへの変更は、以下の状況下で不正な動作の原因になったり、
-//     コードが再生成されるときに損失したりします
+//     コードが再生成されるときに損失したりします。
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MimamoriDemoV2.Properties
-{
-
-
-	/// <summary>
-	///   ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
-	/// </summary>
-	// このクラスは StronglyTypedResourceBuilder クラスが ResGen
-	// または Visual Studio のようなツールを使用して自動生成されました。
-	// メンバーを追加または削除するには、.ResX ファイルを編集して、/str オプションと共に
-	// ResGen を実行し直すか、または VS プロジェクトをリビルドします。
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
-	[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-	[global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-	internal class Resources
-	{
-
-		private static global::System.Resources.ResourceManager resourceMan;
-
-		private static global::System.Globalization.CultureInfo resourceCulture;
-
-		[global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-		internal Resources()
-		{
-		}
-
-		/// <summary>
-		///   このクラスで使用されるキャッシュされた ResourceManager インスタンスを返します。
-		/// </summary>
-		[global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-		internal static global::System.Resources.ResourceManager ResourceManager
-		{
-			get
-			{
-				if ((resourceMan == null))
-				{
-					global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MimamoriDemoV2.Properties.Resources", typeof(Resources).Assembly);
-					resourceMan = temp;
-				}
-				return resourceMan;
-			}
-		}
-
-		/// <summary>
-		///   厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
-		///   現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
-		/// </summary>
-		[global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-		internal static global::System.Globalization.CultureInfo Culture
-		{
-			get
-			{
-				return resourceCulture;
-			}
-			set
-			{
-				resourceCulture = value;
-			}
-		}
-	}
+namespace jp.co.brycen.MimamoriDemo.Properties {
+    using System;
+    
+    
+    /// <summary>
+    ///   ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+    /// </summary>
+    // このクラスは StronglyTypedResourceBuilder クラスが ResGen
+    // または Visual Studio のようなツールを使用して自動生成されました。
+    // メンバーを追加または削除するには、.ResX ファイルを編集して、/str オプションと共に
+    // ResGen を実行し直すか、または VS プロジェクトをビルドし直します。
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("jp.co.brycen.MimamoriDemo.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+        ///   現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap L00_注意 {
+            get {
+                object obj = ResourceManager.GetObject("L00_注意", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap L00_注意_顔のみ {
+            get {
+                object obj = ResourceManager.GetObject("L00_注意_顔のみ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap L01_警戒 {
+            get {
+                object obj = ResourceManager.GetObject("L01_警戒", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap L01_警戒_顔のみ {
+            get {
+                object obj = ResourceManager.GetObject("L01_警戒_顔のみ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap L02_厳重警戒 {
+            get {
+                object obj = ResourceManager.GetObject("L02_厳重警戒", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap L02_厳重警戒_顔のみ {
+            get {
+                object obj = ResourceManager.GetObject("L02_厳重警戒_顔のみ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap L03_危険 {
+            get {
+                object obj = ResourceManager.GetObject("L03_危険", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap L03_危険_顔のみ {
+            get {
+                object obj = ResourceManager.GetObject("L03_危険_顔のみ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap LCDForm {
+            get {
+                object obj = ResourceManager.GetObject("LCDForm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap PCDFrom {
+            get {
+                object obj = ResourceManager.GetObject("PCDFrom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap PCTFrom {
+            get {
+                object obj = ResourceManager.GetObject("PCTFrom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap S00_NimotsuPalletBox {
+            get {
+                object obj = ResourceManager.GetObject("S00_NimotsuPalletBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap S01_CarForkLift {
+            get {
+                object obj = ResourceManager.GetObject("S01_CarForkLift", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap S03_CarTruck {
+            get {
+                object obj = ResourceManager.GetObject("S03_CarTruck", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap S04_JUUKI {
+            get {
+                object obj = ResourceManager.GetObject("S04_JUUKI", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap S05_TOOL {
+            get {
+                object obj = ResourceManager.GetObject("S05_TOOL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap warehouse {
+            get {
+                object obj = ResourceManager.GetObject("warehouse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap ブランドマーク {
+            get {
+                object obj = ResourceManager.GetObject("ブランドマーク", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap 凡例 {
+            get {
+                object obj = ResourceManager.GetObject("凡例", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+    }
 }
