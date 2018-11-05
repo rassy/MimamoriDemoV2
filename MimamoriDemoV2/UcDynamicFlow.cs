@@ -130,8 +130,8 @@ namespace jp.co.brycen.MimamoriDemo
             {
                 // ロケーション画像設定
                 pcbDevice.Location = new Point(dvcSts.LocationX, dvcSts.LocationY);
-                pcbDevice.Image = dvcSts.IndicaterImage;
-            }
+				pcbDevice.Image = dvcSts.IndicaterImage;
+			}
 
             if (this.m_intMaxNum == this.m_intCurNum)
             {
